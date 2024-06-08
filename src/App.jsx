@@ -48,7 +48,7 @@ const App = () => {
 	};
 
 	const onCheckout = () => {
-		telegram.MainButton.text = 'Sotib olish :)';
+		telegram.MainButton.text = 'Покупать :)';
 		telegram.MainButton.show();
 	};
 
@@ -82,7 +82,7 @@ const App = () => {
 
 	return (
 		<>
-			<h1 className='heading'>Sammi kurslar</h1>
+			<h1 className='heading'>Доступные курсы</h1>
 			<Cart cartItems={cartItems} onCheckout={onCheckout} />
 			<div className='cards__container'>
 				{courses.map(course => (
